@@ -240,7 +240,8 @@ const Home = () => {
 {/* Trusted by Brands Section */}
 
 {/* Trusted by Brands Section */}
-<section className="bg-white py-20 px-6 text-center">
+{/* Trusted by Brands Section */}
+<section className="bg-white py-20 px-6 text-center overflow-hidden">
   <div className="max-w-6xl mx-auto">
     <h2 className="text-3xl md:text-4xl font-bold text-[#00477B] mb-4">
       Trusted by Forward-Thinking Brands
@@ -249,62 +250,28 @@ const Home = () => {
       We collaborate with businesses, institutions, and government partners to engineer smart, scalable software solutions.
     </p>
 
-    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 items-center justify-center">
-      {/* Mastercard */}
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png"
-        alt="Mastercard"
-        className="h-12 mx-auto grayscale hover:grayscale-0 transition duration-300"
-      />
-
-      {/* IBM */}
-      <img
-        src="https://cdn.worldvectorlogo.com/logos/ibm.svg"
-        alt="IBM"
-        className="h-10 mx-auto grayscale hover:grayscale-0 transition duration-300"
-      />
-
-      {/* MIT */}
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/0/0c/MIT_logo.svg"
-        alt="MIT"
-        className="h-10 mx-auto grayscale hover:grayscale-0 transition duration-300"
-      />
-
-      {/* NVIDIA */}
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/2/21/Nvidia_logo.svg"
-        alt="NVIDIA"
-        className="h-10 mx-auto grayscale hover:grayscale-0 transition duration-300"
-      />
-
-      {/* Google */}
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/512px-Google_2015_logo.svg.png"
-        alt="Google"
-        className="h-8 mx-auto grayscale hover:grayscale-0 transition duration-300"
-      />
-
-      {/* Microsoft */}
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg"
-        alt="Microsoft"
-        className="h-8 mx-auto grayscale hover:grayscale-0 transition duration-300"
-      />
-
-      {/* Oracle */}
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg"
-        alt="Oracle"
-        className="h-8 mx-auto grayscale hover:grayscale-0 transition duration-300"
-      />
-
-      {/* AWS */}
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
-        alt="AWS"
-        className="h-10 mx-auto grayscale hover:grayscale-0 transition duration-300"
-      />
+    {/* Scrolling container */}
+    <div className="relative w-full overflow-hidden">
+      <div className="flex animate-scroll space-x-16 w-max">
+        {/* Logos */}
+        {[
+          { src: "https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png", alt: "Mastercard" },
+          { src: "https://cdn.worldvectorlogo.com/logos/ibm.svg", alt: "IBM" },
+          { src: "https://upload.wikimedia.org/wikipedia/commons/0/0c/MIT_logo.svg", alt: "MIT" },
+          { src: "https://upload.wikimedia.org/wikipedia/commons/2/21/Nvidia_logo.svg", alt: "NVIDIA" },
+          { src: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/512px-Google_2015_logo.svg.png", alt: "Google" },
+          { src: "https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg", alt: "Microsoft" },
+          { src: "https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg", alt: "Oracle" },
+          { src: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg", alt: "AWS" },
+        ].map((logo, index) => (
+          <img
+            key={index}
+            src={logo.src}
+            alt={logo.alt}
+            className="h-10 grayscale hover:grayscale-0 transition duration-300"
+          />
+        ))}
+      </div>
     </div>
   </div>
 </section>
