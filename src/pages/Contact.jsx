@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import toast from 'react-hot-toast';
 
 const Contact = () => {
   const [form, setForm] = useState({
     from_name: '',
     from_email: '',
     subject: '',
-    message: ''
+    message: '',
   });
 
   const [errors, setErrors] = useState({});
-  const [status, setStatus] = useState('');
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -42,21 +42,25 @@ const Contact = () => {
 
     setErrors({});
 
-    emailjs.send(
-      'service_5xchz5i',
-      'template_fklo04l',
-      form,
-      '5rER37I1dsORgSj8n'
+    toast.promise(
+      emailjs.send(
+        'service_5xchz5i',
+        'template_fklo04l',
+        form,
+        '5rER37I1dsORgSj8n'
+      ),
+      {
+        loading: 'Sending...',
+        success: 'Message sent successfully!',
+        error: 'Failed to send message. Try again later.',
+      }
     ).then(() => {
-      setStatus('Message sent successfully!');
       setForm({
         from_name: '',
         from_email: '',
         subject: '',
-        message: ''
+        message: '',
       });
-    }).catch(() => {
-      setStatus('Failed to send message. Try again later.');
     });
   };
 
@@ -146,23 +150,33 @@ const Contact = () => {
               >
                 Send Message
               </button>
-
-              {/* Status Message */}
-              {status && (
-                <p className="text-green-600 font-medium mt-2">{status}</p>
-              )}
             </form>
           </div>
 
-          {/* Contact Info */}
+          {/* Contact Info + Google Map */}
           <div className="bg-[#F0F9FF] rounded-xl p-6 shadow">
             <h3 className="text-xl font-semibold text-[#00477B] mb-4">Our Contact Details</h3>
-            <ul className="space-y-4 text-gray-700">
-              <li><strong>📍 Office:</strong> Abuja, Nigeria</li>
-              <li><strong>📞 Phone:</strong> +234 800 000 0000</li>
-              <li><strong>✉️ Email:</strong> contact@binarysoft.tech</li>
+            <ul className="space-y-4 text-gray-700 text-sm">
+              <li><strong>📍 Office:</strong> Novare Gateway Mall, Abuja, Nigeria</li>
+              <li><strong>📞 Phone:</strong> +234 903 833 0697</li>
+              <li><strong>✉️ Email:</strong> info@hqinary.com</li>
               <li><strong>⏰ Hours:</strong> Mon–Fri, 9AM – 5PM</li>
             </ul>
+
+            {/* Google Map Embed */}
+            <div className="mt-8">
+              <iframe
+                title="Binary Office Map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.833386727712!2d7.495080874776382!3d9.012224588468434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0b6d4ef2dc9d%3A0x47808a458449681b!2sBaze%20University!5e0!3m2!1sen!2sng!4v1721489740439!5m2!1sen!2sng"
+                width="100%"
+                height="350"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="rounded-lg w-full shadow-lg"
+              ></iframe>
+            </div>
           </div>
         </div>
       </section>

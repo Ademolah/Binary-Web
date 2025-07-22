@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+// import logo from '../assets/images/binary-logo.png';
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -15,8 +16,17 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white/70 backdrop-blur-md shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-        {/* Logo */}
-        <h1 className="text-2xl font-bold text-[#00477B]">Binary</h1>
+
+        {/* Logo + Name */}
+        <Link to="/" className="flex items-center space-x-3">
+          {/* Uncomment to use logo image */}
+          {/* <img
+            src={logo}
+            alt="Binary Logo"
+            className="h-14 w-auto object-contain transition-transform hover:scale-105 duration-300"
+          /> */}
+          <span className="text-2xl font-bold text-[#00477B] hidden sm:inline">Binary</span>
+        </Link>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex space-x-8 items-center text-sm font-medium text-gray-800">
@@ -24,14 +34,15 @@ const Navbar = () => {
             <Link
               key={link.name}
               to={link.path}
-              className="hover:text-[#00477B] transition-colors duration-200"
+              className="relative tracking-wide text-gray-800 hover:text-[#50D6FE] transition-colors duration-300 group"
             >
               {link.name}
+              <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#50D6FE] transition-all duration-300 group-hover:w-full"></span>
             </Link>
           ))}
           <Link
             to="/contact"
-            className="bg-[#00477B] text-white px-4 py-2 rounded hover:bg-[#00355c] transition"
+            className="ml-4 bg-[#00477B] text-white px-5 py-2 rounded-md font-semibold hover:bg-[#00355c] transition-all duration-300 shadow-md hover:shadow-lg"
           >
             Let’s Talk
           </Link>

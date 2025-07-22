@@ -25,8 +25,10 @@
 // export default App;
 
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; 
-import Navbar from './components/Navbar'
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Toaster } from "react-hot-toast"; // 
+
+import Navbar from './components/Navbar';
 import Footer from "./components/Footer";
 import About from "./pages/About";
 import Services from "./pages/Service";
@@ -36,19 +38,25 @@ import Contact from "./pages/Contact";
 function App() {
   return (
     <Router>
-      <Navbar/>
+      <Navbar />
+
+      {/* This enables toast notifications globally */}
+      <Toaster position="top-right" reverseOrder={false} />
+
       <div className="pt-20 px-6 min-h-[80vh]">
         <Routes>
-          <Route path="/" element={<Home/>} />
-          <Route path="/services" element={<Services/>} />
+          <Route path="/" element={<Home />} />
+          <Route path="/services" element={<Services />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact/>} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </div>
-      <Footer/>
+
+      <Footer />
     </Router>
   );
 }
 
 export default App;
+
 

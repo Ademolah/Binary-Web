@@ -36,20 +36,20 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="max-w-7xl mx-auto px-6 py-16 text-gray-800">
-      <h2 className="text-4xl font-bold text-[#00477B] mb-10 text-center">Our Services</h2>
+    <section className="max-w-7xl mx-auto px-6 py-20 text-gray-800">
+      <h2 className="text-4xl font-bold text-[#00477B] mb-14 text-center">Our Services</h2>
 
       <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {services.map((service, index) => (
           <motion.div
             key={index}
-            whileHover={{ scale: 1.05 }}
+            whileHover={{ scale: 1.04 }}
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 30 }}
             transition={{ duration: 0.4, delay: index * 0.1 }}
-            className="bg-white rounded-xl shadow-lg p-6 border hover:shadow-xl transition-all"
+            className="relative bg-white/80 backdrop-blur-lg border border-white/40 rounded-2xl shadow-md p-6 transition-all duration-300 hover:shadow-2xl hover:border-[#50D6FE]"
           >
-            <div className="text-4xl mb-4">{service.icon}</div>
+            <div className="text-5xl mb-4 transition-transform duration-300 hover:scale-110">{service.icon}</div>
             <h3 className="text-xl font-semibold text-[#00477B]">{service.title}</h3>
             <p className="mt-2 text-gray-600 text-sm">{service.description}</p>
           </motion.div>
