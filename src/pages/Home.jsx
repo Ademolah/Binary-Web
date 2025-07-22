@@ -276,6 +276,24 @@ const Home = () => {
   </div>
 </section>
 
+        {/* Final Call to Action Section */}
+    <section className="bg-gradient-to-r from-[#00477B] via-[#50D6FE] to-[#00477B] text-white py-20 px-6 text-center">
+    <div className="max-w-4xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        Let’s Build Something Incredible Together
+        </h2>
+        <p className="text-white/90 mb-8">
+        Whether you're a startup, enterprise, or public institution — Binary is ready to turn your vision into scalable, secure, and smart technology.
+        </p>
+        <a
+        href="/contact"
+        className="inline-block bg-white text-[#00477B] font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-[#C1F2FF] transition duration-300"
+        >
+        Get Started
+        </a>
+    </div>
+    </section>
+
 
 
     </>
