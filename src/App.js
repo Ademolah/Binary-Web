@@ -27,12 +27,13 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; 
 import Navbar from './components/Navbar'
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <Router>
       <Navbar/>
-      <div className="pt-20 px-6">
+      <div className="pt-20 px-6 min-h-[80vh]">
         <Routes>
           <Route path="/" element={<div>Home Page</div>} />
           <Route path="/services" element={<div>Services Page</div>} />
@@ -40,6 +41,7 @@ function App() {
           <Route path="/contact" element={<div>Contact Page</div>} />
         </Routes>
       </div>
+      <Footer/>
     </Router>
   );
 }
