@@ -72,6 +72,245 @@ const Home = () => {
           </div>
         </div>
       </section>
+            <section className="bg-[#F0F8FF] py-20 px-6 text-gray-800">
+        <div className="max-w-6xl mx-auto text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#00477B] mb-4">
+            Industries We Serve
+            </h2>
+            <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
+            We power innovation across a wide range of sectors by building tailor-fit, future-ready software solutions.
+            </p>
+
+            <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+            <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all">
+                <div className="text-4xl mb-4">💰</div>
+                <h3 className="text-xl font-semibold text-[#00477B]">Fintech</h3>
+                <p className="text-sm mt-2 text-gray-700">
+                Payment systems, fraud detection, AI credit scoring, and next-gen banking tools.
+                </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all">
+                <div className="text-4xl mb-4">🏥</div>
+                <h3 className="text-xl font-semibold text-[#00477B]">Healthcare</h3>
+                <p className="text-sm mt-2 text-gray-700">
+                AI in diagnostics, telemedicine platforms, patient records and hospital automation.
+                </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all">
+                <div className="text-4xl mb-4">🎓</div>
+                <h3 className="text-xl font-semibold text-[#00477B]">Education</h3>
+                <p className="text-sm mt-2 text-gray-700">
+                E-learning portals, smart grading systems, student databases, and analytics dashboards.
+                </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all">
+                <div className="text-4xl mb-4">🏛️</div>
+                <h3 className="text-xl font-semibold text-[#00477B]">Government</h3>
+                <p className="text-sm mt-2 text-gray-700">
+                Transparency dashboards, digital registries, AI-backed public services & reporting tools.
+                </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all">
+                <div className="text-4xl mb-4">🛍️</div>
+                <h3 className="text-xl font-semibold text-[#00477B]">E-commerce</h3>
+                <p className="text-sm mt-2 text-gray-700">
+                Full-stack commerce solutions with smart recommendations, logistics & checkout flows.
+                </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all">
+                <div className="text-4xl mb-4">🚀</div>
+                <h3 className="text-xl font-semibold text-[#00477B]">Startups</h3>
+                <p className="text-sm mt-2 text-gray-700">
+                MVPs, platform builds, growth tools — everything a fast-moving startup needs to scale.
+                </p>
+            </div>
+            </div>
+        </div>
+        </section>
+                    {/* Our Process Section */}
+            <section className="bg-white py-20 px-6 text-gray-800">
+            <div className="max-w-6xl mx-auto text-center">
+                <h2 className="text-3xl md:text-4xl font-bold text-[#00477B] mb-4">
+                Our Process
+                </h2>
+                <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
+                We partner with clients from idea to launch, providing hands-on support and transparency every step of the way.
+                </p>
+
+                <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-4">
+                {/* Step 1 */}
+                <div className="relative p-6 bg-[#F9FAFB] rounded-lg shadow hover:shadow-md transition-all">
+                    <div className="text-2xl font-bold text-white bg-[#00477B] w-10 h-10 flex items-center justify-center rounded-full mb-4 mx-auto">
+                    1
+                    </div>
+                    <h3 className="text-lg font-semibold text-[#00477B] mb-2">Consult & Discover</h3>
+                    <p className="text-sm text-gray-700">
+                    We understand your goals, users, and challenges to define the best-fit solution.
+                    </p>
+                </div>
+
+                {/* Step 2 */}
+                <div className="relative p-6 bg-[#F9FAFB] rounded-lg shadow hover:shadow-md transition-all">
+                    <div className="text-2xl font-bold text-white bg-[#00477B] w-10 h-10 flex items-center justify-center rounded-full mb-4 mx-auto">
+                    2
+                    </div>
+                    <h3 className="text-lg font-semibold text-[#00477B] mb-2">Design & Architect</h3>
+                    <p className="text-sm text-gray-700">
+                    We design intuitive interfaces and plan robust system architecture to scale.
+                    </p>
+                </div>
+
+                {/* Step 3 */}
+                <div className="relative p-6 bg-[#F9FAFB] rounded-lg shadow hover:shadow-md transition-all">
+                    <div className="text-2xl font-bold text-white bg-[#00477B] w-10 h-10 flex items-center justify-center rounded-full mb-4 mx-auto">
+                    3
+                    </div>
+                    <h3 className="text-lg font-semibold text-[#00477B] mb-2">Build & Test</h3>
+                    <p className="text-sm text-gray-700">
+                    Our dev team brings the vision to life with agile sprints, testing, and reviews.
+                    </p>
+                </div>
+
+                {/* Step 4 */}
+                <div className="relative p-6 bg-[#F9FAFB] rounded-lg shadow hover:shadow-md transition-all">
+                    <div className="text-2xl font-bold text-white bg-[#00477B] w-10 h-10 flex items-center justify-center rounded-full mb-4 mx-auto">
+                    4
+                    </div>
+                    <h3 className="text-lg font-semibold text-[#00477B] mb-2">Launch & Support</h3>
+                    <p className="text-sm text-gray-700">
+                    We deploy, monitor, and support your product — iterating with you as you scale.
+                    </p>
+                </div>
+                </div>
+            </div>
+            </section>
+                            {/* Case Studies Section */}
+                            {/* Our Work in Action Section */}
+            {/* Our Work in Action Section (with icons) */}
+<section
+  className="py-20 px-6 text-white bg-gradient-to-r from-[#00477B] via-[#50D6FE] to-[#00477B] bg-[length:200%_200%] animate-gradient-x"
+>
+  <div className="max-w-6xl mx-auto text-center">
+    <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+      Our Work in Action
+    </h2>
+    <p className="text-white/90 mb-12 max-w-2xl mx-auto">
+      Explore a few of the powerful solutions we’ve built across industries. From idea to execution, Binary delivers impact.
+    </p>
+
+    <div className="grid gap-10 grid-cols-1 md:grid-cols-3">
+      {/* Project 1 */}
+      <div className="bg-white/10 backdrop-blur-lg p-6 rounded-lg shadow hover:shadow-lg transition-all text-left">
+        <div className="text-4xl mb-4">💳</div>
+        <h3 className="text-xl font-bold text-white mb-2">FinTech Wallet Platform</h3>
+        <p className="text-sm text-white/80 mb-3">
+          Built a secure digital wallet & real-time transaction system with KYC, fraud detection, and merchant API support.
+        </p>
+        <span className="text-xs text-[#C1F2FF] font-medium">Client: NovaPay</span>
+      </div>
+
+      {/* Project 2 */}
+      <div className="bg-white/10 backdrop-blur-lg p-6 rounded-lg shadow hover:shadow-lg transition-all text-left">
+        <div className="text-4xl mb-4">🧬</div>
+        <h3 className="text-xl font-bold text-white mb-2">AI Health Diagnostics</h3>
+        <p className="text-sm text-white/80 mb-3">
+          Developed a machine-learning tool to predict patient health outcomes based on vital data and medical history.
+        </p>
+        <span className="text-xs text-[#C1F2FF] font-medium">Client: MedIntel</span>
+      </div>
+
+      {/* Project 3 */}
+      <div className="bg-white/10 backdrop-blur-lg p-6 rounded-lg shadow hover:shadow-lg transition-all text-left">
+        <div className="text-4xl mb-4">🏫</div>
+        <h3 className="text-xl font-bold text-white mb-2">University Portal Suite</h3>
+        <p className="text-sm text-white/80 mb-3">
+          Created a robust academic platform with student portals, staff dashboards, course management & results automation.
+        </p>
+        <span className="text-xs text-[#C1F2FF] font-medium">Client: Baze University</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+{/* Trusted by Brands Section */}
+
+{/* Trusted by Brands Section */}
+<section className="bg-white py-20 px-6 text-center">
+  <div className="max-w-6xl mx-auto">
+    <h2 className="text-3xl md:text-4xl font-bold text-[#00477B] mb-4">
+      Trusted by Forward-Thinking Brands
+    </h2>
+    <p className="text-gray-600 mb-12 max-w-xl mx-auto">
+      We collaborate with businesses, institutions, and government partners to engineer smart, scalable software solutions.
+    </p>
+
+    <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8 items-center justify-center">
+      {/* Mastercard */}
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png"
+        alt="Mastercard"
+        className="h-12 mx-auto grayscale hover:grayscale-0 transition duration-300"
+      />
+
+      {/* IBM */}
+      <img
+        src="https://cdn.worldvectorlogo.com/logos/ibm.svg"
+        alt="IBM"
+        className="h-10 mx-auto grayscale hover:grayscale-0 transition duration-300"
+      />
+
+      {/* MIT */}
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/0/0c/MIT_logo.svg"
+        alt="MIT"
+        className="h-10 mx-auto grayscale hover:grayscale-0 transition duration-300"
+      />
+
+      {/* NVIDIA */}
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/2/21/Nvidia_logo.svg"
+        alt="NVIDIA"
+        className="h-10 mx-auto grayscale hover:grayscale-0 transition duration-300"
+      />
+
+      {/* Google */}
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/512px-Google_2015_logo.svg.png"
+        alt="Google"
+        className="h-8 mx-auto grayscale hover:grayscale-0 transition duration-300"
+      />
+
+      {/* Microsoft */}
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/9/96/Microsoft_logo_%282012%29.svg"
+        alt="Microsoft"
+        className="h-8 mx-auto grayscale hover:grayscale-0 transition duration-300"
+      />
+
+      {/* Oracle */}
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/5/50/Oracle_logo.svg"
+        alt="Oracle"
+        className="h-8 mx-auto grayscale hover:grayscale-0 transition duration-300"
+      />
+
+      {/* AWS */}
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg"
+        alt="AWS"
+        className="h-10 mx-auto grayscale hover:grayscale-0 transition duration-300"
+      />
+    </div>
+  </div>
+</section>
+
+
+
     </>
   );
 };
