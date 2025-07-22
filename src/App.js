@@ -28,6 +28,8 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; 
 import Navbar from './components/Navbar'
 import Footer from "./components/Footer";
+import About from "./pages/About";
+import Services from "./pages/Service";
 
 function App() {
   return (
@@ -36,8 +38,8 @@ function App() {
       <div className="pt-20 px-6 min-h-[80vh]">
         <Routes>
           <Route path="/" element={<div>Home Page</div>} />
-          <Route path="/services" element={<div>Services Page</div>} />
-          <Route path="/about" element={<div>About Page</div>} />
+          <Route path="/services" element={<Services/>} />
+          <Route path="/about" element={<About />} />
           <Route path="/contact" element={<div>Contact Page</div>} />
         </Routes>
       </div>
