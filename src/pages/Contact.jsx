@@ -160,7 +160,7 @@ const Contact = () => {
             <ul className="space-y-4 text-gray-700 text-sm">
               <li><strong>📍 Office:</strong> Novare Gateway Mall, Abuja, Nigeria</li>
               <li><strong>📞 Phone:</strong> +234 903 833 0697</li>
-              <li><strong>✉️ Email:</strong> info@hqinary.com</li>
+              <li><strong>✉️ Email:</strong> info@hqbinary.com</li>
               <li><strong>⏰ Hours:</strong> Mon–Fri, 9AM – 5PM</li>
             </ul>
 
