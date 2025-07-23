@@ -2,6 +2,7 @@ import React from 'react';
 import CanvasBackground from '../components/CanvasBackground';
 import { Typewriter } from 'react-simple-typewriter';
 import TechStack from '../components/Techstack';
+import { motion } from 'framer-motion';
 
 const Home = () => {
   return (
@@ -22,9 +23,15 @@ const Home = () => {
             />
           </h1>
 
-          <p className="mt-4 max-w-xl text-base sm:text-lg md:text-xl text-white">
-            At Binary, we engineer world-class digital intelligence, fusing AI, cloud, and code to power the next generation of global innovation
-          </p>
+            <motion.p
+    initial={{ opacity: 0, y: 30 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 0.4, duration: 0.8 }}
+    className="mt-6 max-w-2xl text-white text-lg sm:text-xl md:text-2xl font-light leading-relaxed tracking-wide text-center bg-white/10 backdrop-blur-md px-6 py-4 rounded-xl shadow-lg"
+    >
+    <span className="text-[#50D6FE] font-semibold">At Binary</span>, we engineer <span className="text-[#50D6FE] font-semibold">world-class digital intelligence</span> — fusing <span className="text-[#50D6FE]">AI</span>, <span className="text-[#50D6FE]">cloud</span>, and <span className="text-[#50D6FE]">code</span> to power the next generation of global innovation.
+    </motion.p>
+
         </div>
       </div>
 
