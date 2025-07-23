@@ -222,7 +222,7 @@ const Home = () => {
                 <p className="text-sm text-white/80 mb-3">
                 Developed a machine-learning tool to predict patient health outcomes based on vital data and medical history.
                 </p>
-                <span className="text-xs text-[#C1F2FF] font-medium">Client: MedIntel</span>
+                <span className="text-xs text-[#C1F2FF] font-medium">Client: NeuroPharmAI</span>
             </div>
 
             {/* Project 3 */}

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-// import logo from '../assets/images/binary-logo.png';
+import logo from '../assets/images/binarylogo.svg';
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -20,12 +20,12 @@ const Navbar = () => {
         {/* Logo + Name */}
         <Link to="/" className="flex items-center space-x-3">
           {/* Uncomment to use logo image */}
-          {/* <img
+          <img
             src={logo}
             alt="Binary Logo"
-            className="h-14 w-auto object-contain transition-transform hover:scale-105 duration-300"
-          /> */}
-          <span className="text-2xl font-bold text-[#00477B] hidden sm:inline">Binary</span>
+            className="h-10 w-auto object-contain transition-transform hover:scale-105 duration-300"
+          />
+          {/* <span className="text-2xl font-bold text-[#00477B] hidden sm:inline">Binary</span> */}
         </Link>
 
         {/* Desktop Nav */}
