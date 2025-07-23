@@ -52,7 +52,7 @@ const IndustriesSection = () => {
             { icon: "🎓", title: "Education", desc: "E-learning portals, smart grading systems, student databases, and analytics dashboards." },
             { icon: "🏛️", title: "Government", desc: "Transparency dashboards, digital registries, AI-backed public services & reporting tools." },
             { icon: "🛍️", title: "E-commerce", desc: "Full-stack commerce solutions with smart recommendations, logistics & checkout flows." },
-            { icon: "🚀", title: "Startups", desc: "MVPs, platform builds, growth tools — everything a fast-moving startup needs to scale." },
+            { icon: "🚀", title: "Startups", desc: "MVPs, platform builds, growth tools, everything a fast-moving startup needs to scale." },
             { icon: "⛓️", title: "Blockchain", desc: "DApps, smart contracts, crypto platforms, and secure Web3 infrastructure development." },
             { icon: "📡", title: "Telecom", desc: "Telecom automation, network optimization, billing systems, and AI-powered customer solutions." },
           ].map((industry, i) => (
