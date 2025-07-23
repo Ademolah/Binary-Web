@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import emailjs from '@emailjs/browser';
 import toast from 'react-hot-toast';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
   const [form, setForm] = useState({
@@ -18,7 +19,6 @@ const Contact = () => {
 
   const validate = () => {
     const newErrors = {};
-
     if (!form.from_name.trim()) newErrors.from_name = 'Name is required';
     if (!form.from_email.trim()) {
       newErrors.from_email = 'Email is required';
@@ -45,7 +45,7 @@ const Contact = () => {
     toast.promise(
       emailjs.send(
         'service_5xchz5i',
-        'template_fklo04l',
+        'template_gehipuf',
         form,
         '5rER37I1dsORgSj8n'
       ),
@@ -66,14 +66,28 @@ const Contact = () => {
 
   return (
     <div className="pt-20">
-      {/* Page Header */}
-      <section className="bg-[#00477B] text-white py-20 px-6 text-center">
-        <div className="max-w-3xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact Us</h1>
-          <p className="text-white/80 text-lg">
+      {/* Animated Hero Section */}
+      <section className="relative bg-[#00477B] text-white py-24 px-6 overflow-hidden">
+        <div className="max-w-4xl mx-auto text-center relative z-10">
+          <motion.h1
+            initial={{ y: 40, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
+            className="text-4xl md:text-5xl font-extrabold mb-4"
+          >
+            Contact Us
+          </motion.h1>
+          <motion.p
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+            className="text-white/80 text-lg max-w-2xl mx-auto"
+          >
             Let’s start something great. Reach out to us for partnerships, product inquiries, or to request a proposal.
-          </p>
+          </motion.p>
         </div>
+
+        <div className="absolute top-0 left-0 w-full h-full opacity-10 z-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#50D6FE] via-transparent to-transparent animate-pulse blur-3xl"></div>
       </section>
 
       {/* Contact Section */}
@@ -83,7 +97,6 @@ const Contact = () => {
           <div>
             <h2 className="text-2xl font-bold text-[#00477B] mb-4">Send us a Message</h2>
             <form onSubmit={sendEmail} className="space-y-6">
-              {/* Name */}
               <div>
                 <input
                   type="text"
@@ -93,12 +106,9 @@ const Contact = () => {
                   placeholder="Your Name"
                   className="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#50D6FE]"
                 />
-                {errors.from_name && (
-                  <p className="text-red-500 text-sm mt-1">{errors.from_name}</p>
-                )}
+                {errors.from_name && <p className="text-red-500 text-sm mt-1">{errors.from_name}</p>}
               </div>
 
-              {/* Email */}
               <div>
                 <input
                   type="email"
@@ -108,12 +118,9 @@ const Contact = () => {
                   placeholder="Your Email"
                   className="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#50D6FE]"
                 />
-                {errors.from_email && (
-                  <p className="text-red-500 text-sm mt-1">{errors.from_email}</p>
-                )}
+                {errors.from_email && <p className="text-red-500 text-sm mt-1">{errors.from_email}</p>}
               </div>
 
-              {/* Subject */}
               <div>
                 <input
                   type="text"
@@ -123,12 +130,9 @@ const Contact = () => {
                   placeholder="Subject"
                   className="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#50D6FE]"
                 />
-                {errors.subject && (
-                  <p className="text-red-500 text-sm mt-1">{errors.subject}</p>
-                )}
+                {errors.subject && <p className="text-red-500 text-sm mt-1">{errors.subject}</p>}
               </div>
 
-              {/* Message */}
               <div>
                 <textarea
                   name="message"
@@ -138,12 +142,9 @@ const Contact = () => {
                   rows="5"
                   className="w-full border border-gray-300 rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-[#50D6FE]"
                 ></textarea>
-                {errors.message && (
-                  <p className="text-red-500 text-sm mt-1">{errors.message}</p>
-                )}
+                {errors.message && <p className="text-red-500 text-sm mt-1">{errors.message}</p>}
               </div>
 
-              {/* Button */}
               <button
                 type="submit"
                 className="bg-[#00477B] text-white font-semibold px-6 py-3 rounded-md hover:bg-[#00325a] transition-all"
@@ -163,7 +164,6 @@ const Contact = () => {
               <li><strong>⏰ Hours:</strong> Mon–Fri, 9AM – 5PM</li>
             </ul>
 
-            {/* Google Map Embed */}
             <div className="mt-8">
               <iframe
                 title="Binary Office Map"
