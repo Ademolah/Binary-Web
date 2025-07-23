@@ -1,30 +1,41 @@
 import { motion } from "framer-motion";
 import {
-  FaReact, FaNodeJs, FaDocker, FaPython, FaAws, 
+  FaReact, FaNodeJs, FaDocker, FaPython, FaAws, FaSwift,
 } from "react-icons/fa";
 import {
   SiTensorflow, SiPytorch, SiMongodb, SiPostgresql, SiTailwindcss,
   SiNextdotjs, SiKubernetes, SiVercel, SiFirebase, SiExpress, SiGithubactions,
-  SiOpenai, SiHuggingface,
+  SiOpenai, SiHuggingface, SiFlutter, SiIonic, SiKotlin,
 } from "react-icons/si";
 
 const techStack = [
-  {
-    title: "AI & Machine Learning",
-    icons: [SiTensorflow, SiPytorch, SiOpenai, SiHuggingface, FaPython],
-  },
-  {
-    title: "Frontend",
-    icons: [FaReact, SiNextdotjs, SiTailwindcss],
-  },
-  {
-    title: "Backend",
-    icons: [FaNodeJs, SiExpress, SiMongodb, SiPostgresql],
-  },
-  {
-    title: "DevOps & Cloud",
-    icons: [FaDocker, SiKubernetes, FaAws, SiVercel, SiFirebase, SiGithubactions],
-  },
+  { icon: SiTensorflow, name: "TensorFlow" },
+  { icon: SiPytorch, name: "PyTorch" },
+  { icon: SiOpenai, name: "OpenAI" },
+  { icon: SiHuggingface, name: "Hugging Face" },
+  { icon: FaPython, name: "Python" },
+
+  { icon: FaReact, name: "React" },
+  { icon: SiNextdotjs, name: "Next.js" },
+  { icon: SiTailwindcss, name: "Tailwind CSS" },
+
+  { icon: FaNodeJs, name: "Node.js" },
+  { icon: SiExpress, name: "Express.js" },
+  { icon: SiMongodb, name: "MongoDB" },
+  { icon: SiPostgresql, name: "PostgreSQL" },
+
+  { icon: FaReact, name: "React Native" },
+  { icon: SiFlutter, name: "Flutter" },
+  { icon: FaSwift, name: "Swift" },
+  { icon: SiKotlin, name: "Kotlin" },
+  { icon: SiIonic, name: "Ionic" },
+
+  { icon: FaDocker, name: "Docker" },
+  { icon: SiKubernetes, name: "Kubernetes" },
+  { icon: FaAws, name: "AWS" },
+  { icon: SiVercel, name: "Vercel" },
+  { icon: SiFirebase, name: "Firebase" },
+  { icon: SiGithubactions, name: "GitHub Actions" },
 ];
 
 const TechStack = () => (
@@ -34,7 +45,7 @@ const TechStack = () => (
         initial={{ opacity: 0, y: 40 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-4xl font-bold text-[#00477B] mb-8"
+        className="text-4xl font-bold text-[#00477B] mb-6"
       >
         Built With Trusted & Scalable Technologies
       </motion.h2>
@@ -42,23 +53,16 @@ const TechStack = () => (
         We use modern tools, frameworks, and cloud infrastructure to power every Binary product — ensuring performance, reliability, and innovation.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 text-center">
-        {techStack.map((group, index) => (
-          <motion.div
-            key={group.title}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.15, duration: 0.5 }}
-            className="bg-white rounded-xl shadow-lg p-6"
-          >
-            <h3 className="text-[#00477B] font-semibold mb-4">{group.title}</h3>
-            <div className="flex justify-center flex-wrap gap-4 text-3xl text-[#00477B]">
-              {group.icons.map((Icon, i) => (
-                <Icon key={i} className="hover:scale-110 transition-transform duration-300" />
-              ))}
+      {/* Scrolling row */}
+      <div className="overflow-hidden">
+        <div className="flex w-max animate-scroll space-x-12 px-4">
+          {techStack.map(({ icon: Icon, name }, index) => (
+            <div key={index} className="flex flex-col items-center text-[#00477B] w-20">
+              <Icon className="text-4xl hover:scale-110 transition-transform duration-300 mb-1" />
+              <span className="text-xs font-medium">{name}</span>
             </div>
-          </motion.div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   </section>

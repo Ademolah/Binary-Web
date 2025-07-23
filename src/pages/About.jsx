@@ -1,18 +1,31 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const About = () => {
   return (
     <div className="pt-20">
-      {/* Hero Header */}
-      <section className="bg-[#00477B] text-white py-20 px-6 text-center">
-        <div className="max-w-4xl mx-auto">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            About Binary
-          </h1>
-          <p className="text-white/80 text-lg">
+      {/* Animated Hero Section */}
+      <section className="relative bg-[#00477B] text-white py-24 px-6 overflow-hidden">
+        <div className="max-w-4xl mx-auto text-center relative z-10">
+          <motion.h1
+            initial={{ y: 40, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8, ease: 'easeOut' }}
+            className="text-4xl md:text-5xl font-extrabold mb-4"
+          >
+            About Us
+          </motion.h1>
+          <motion.p
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.2, duration: 0.6 }}
+            className="text-white/80 text-lg max-w-2xl mx-auto"
+          >
             Pioneering the future of software and internet technology — empowering innovation across industries.
-          </p>
+          </motion.p>
         </div>
+
+        <div className="absolute top-0 left-0 w-full h-full opacity-10 z-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#50D6FE] via-transparent to-transparent animate-pulse blur-3xl"></div>
       </section>
 
       {/* Our Story */}

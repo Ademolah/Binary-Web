@@ -23,7 +23,7 @@ const Home = () => {
           </h1>
 
           <p className="mt-4 max-w-xl text-base sm:text-lg md:text-xl text-white">
-            Binary builds intelligent, scalable digital solutions for startups, enterprises, and governments.
+            At Binary, we engineer world-class digital intelligence, fusing AI, cloud, and code to power the next generation of global innovation
           </p>
         </div>
       </div>
