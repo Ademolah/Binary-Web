@@ -38,7 +38,7 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-3">Connect With Us</h3>
           <div className="flex space-x-4 text-xl">
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#50D6FE]">
+            <a href="https://www.linkedin.com/company/binaryinnovations/" target="_blank" rel="noopener noreferrer" className="hover:text-[#50D6FE]">
               <FaLinkedin />
             </a>
             <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#50D6FE]">
@@ -47,7 +47,7 @@ const Footer = () => {
             <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#50D6FE]">
               <FaGithub />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#50D6FE]">
+            <a href="https://www.instagram.com/binary_hq?igsh=MWhnZ2k1a2Q4b3Rvbw==" target="_blank" rel="noopener noreferrer" className="hover:text-[#50D6FE]">
               <FaInstagram />
             </a>
           </div>
