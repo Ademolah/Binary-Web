@@ -242,7 +242,7 @@ const Home = () => {
             Let’s Build Something Incredible Together
             </h2>
             <p className="text-white/90 mb-8">
-            Whether you're a startup, enterprise, or public institution — Binary is ready to turn your vision into scalable, secure, and smart technology.
+            Whether you're a startup, enterprise, or public institution, Binary is ready to turn your vision into scalable, secure, and smart technology.
             </p>
             <a
             href="/contact"
