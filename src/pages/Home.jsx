@@ -29,7 +29,7 @@ const Home = () => {
     transition={{ delay: 0.4, duration: 0.8 }}
     className="mt-6 max-w-2xl text-white text-lg sm:text-xl md:text-2xl font-light leading-relaxed tracking-wide text-center bg-white/10 backdrop-blur-md px-6 py-4 rounded-xl shadow-lg"
     >
-    <span className="text-[#50D6FE] font-semibold">At Binary</span>, we engineer <span className="text-[#50D6FE] font-semibold">world-class digital intelligence</span> — fusing <span className="text-[#50D6FE]">AI</span>, <span className="text-[#50D6FE]">cloud</span>, and <span className="text-[#50D6FE]">code</span> to power the next generation of global innovation.
+    <span className="text-[#50D6FE] font-semibold">At Binary</span>, we engineer <span className="text-[#50D6FE] font-semibold">world-class digital intelligence</span> fusing <span className="text-[#50D6FE]">AI</span>, <span className="text-[#50D6FE]">cloud</span>, and <span className="text-[#50D6FE]">code</span> to power the next generation of global innovation.
     </motion.p>
 
         </div>
