@@ -82,10 +82,10 @@ const Home = () => {
         </div>
       </section>
    
-   {/* Industry we serve */}
+        {/* Industry we serve */}
 
 
-    <IndustriesSection/>
+          <IndustriesSection/>
 
 
 
