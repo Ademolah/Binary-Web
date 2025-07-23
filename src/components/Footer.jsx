@@ -11,7 +11,7 @@ const Footer = () => {
         <div>
           <h2 className="text-2xl font-bold mb-2">Binary</h2>
           <p className="text-sm text-white/80">
-            Powering innovative software solutions across industries — from startups and enterprises to governments.
+            Powering innovative software solutions across industries, from startups and enterprises to governments.
           </p>
         </div>
 

@@ -59,7 +59,7 @@ const Home = () => {
             <div className="p-6 bg-[#F9FAFB] rounded-lg shadow hover:shadow-md transition-all">
               <h3 className="text-xl font-semibold text-[#00477B] mb-2">Cross-Industry Expertise</h3>
               <p className="text-sm text-gray-700">
-                We’ve built for finance, healthcare, education, public sector, and startups — globally.
+                We’ve built for finance, healthcare, education, public sector, and startups, globally.
               </p>
             </div>
 
@@ -67,7 +67,7 @@ const Home = () => {
             <div className="p-6 bg-[#F9FAFB] rounded-lg shadow hover:shadow-md transition-all">
               <h3 className="text-xl font-semibold text-[#00477B] mb-2">Partnership Mentality</h3>
               <p className="text-sm text-gray-700">
-                We don’t just deliver — we collaborate, support, and scale with your vision long-term.
+                We don’t just deliver, we collaborate, support, and scale with your vision long-term.
               </p>
             </div>
           </div>
@@ -127,7 +127,7 @@ const Home = () => {
                 <div className="text-4xl mb-4">🚀</div>
                 <h3 className="text-xl font-semibold text-[#00477B]">Startups</h3>
                 <p className="text-sm mt-2 text-gray-700">
-                MVPs, platform builds, growth tools — everything a fast-moving startup needs to scale.
+                MVPs, platform builds, growth tools, everything a fast-moving startup needs to scale.
                 </p>
             </div>
             </div>
@@ -184,7 +184,7 @@ const Home = () => {
                     </div>
                     <h3 className="text-lg font-semibold text-[#00477B] mb-2">Launch & Support</h3>
                     <p className="text-sm text-gray-700">
-                    We deploy, monitor, and support your product — iterating with you as you scale.
+                    We deploy, monitor, and support your product, iterating with you as you scale.
                     </p>
                 </div>
                 </div>

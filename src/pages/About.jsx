@@ -21,7 +21,7 @@ const About = () => {
             transition={{ delay: 0.2, duration: 0.6 }}
             className="text-white/80 text-lg max-w-2xl mx-auto"
           >
-            Pioneering the future of software and internet technology — empowering innovation across industries.
+            Pioneering the future of software and internet technology, empowering innovation across industries.
           </motion.p>
         </div>
 
