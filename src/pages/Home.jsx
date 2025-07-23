@@ -80,66 +80,91 @@ const Home = () => {
           </div>
         </div>
       </section>
-            <section className="bg-[#F0F8FF] py-20 px-6 text-gray-800">
-        <div className="max-w-6xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#00477B] mb-4">
-            Industries We Serve
-            </h2>
-            <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
-            We power innovation across a wide range of sectors by building tailor-fit, future-ready software solutions.
-            </p>
+    <section className="bg-[#F0F8FF] py-20 px-6 text-gray-800">
+  <div className="max-w-6xl mx-auto text-center">
+    <h2 className="text-3xl md:text-4xl font-bold text-[#00477B] mb-4">
+      Industries We Serve
+    </h2>
+    <p className="text-gray-600 mb-12 max-w-2xl mx-auto">
+      We power innovation across a wide range of sectors by building tailor-fit, future-ready software solutions.
+    </p>
 
-            <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-            <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all">
-                <div className="text-4xl mb-4">💰</div>
-                <h3 className="text-xl font-semibold text-[#00477B]">Fintech</h3>
-                <p className="text-sm mt-2 text-gray-700">
-                Payment systems, fraud detection, AI credit scoring, and next-gen banking tools.
-                </p>
-            </div>
+    <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+      {/* Fintech */}
+      <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all">
+        <div className="text-4xl mb-4">💰</div>
+        <h3 className="text-xl font-semibold text-[#00477B]">Fintech</h3>
+        <p className="text-sm mt-2 text-gray-700">
+          Payment systems, fraud detection, AI credit scoring, and next-gen banking tools.
+        </p>
+      </div>
 
-            <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all">
-                <div className="text-4xl mb-4">🏥</div>
-                <h3 className="text-xl font-semibold text-[#00477B]">Healthcare</h3>
-                <p className="text-sm mt-2 text-gray-700">
-                AI in diagnostics, telemedicine platforms, patient records and hospital automation.
-                </p>
-            </div>
+      {/* Healthcare */}
+      <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all">
+        <div className="text-4xl mb-4">🏥</div>
+        <h3 className="text-xl font-semibold text-[#00477B]">Healthcare</h3>
+        <p className="text-sm mt-2 text-gray-700">
+          AI in diagnostics, telemedicine platforms, patient records and hospital automation.
+        </p>
+      </div>
 
-            <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all">
-                <div className="text-4xl mb-4">🎓</div>
-                <h3 className="text-xl font-semibold text-[#00477B]">Education</h3>
-                <p className="text-sm mt-2 text-gray-700">
-                E-learning portals, smart grading systems, student databases, and analytics dashboards.
-                </p>
-            </div>
+      {/* Education */}
+      <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all">
+        <div className="text-4xl mb-4">🎓</div>
+        <h3 className="text-xl font-semibold text-[#00477B]">Education</h3>
+        <p className="text-sm mt-2 text-gray-700">
+          E-learning portals, smart grading systems, student databases, and analytics dashboards.
+        </p>
+      </div>
 
-            <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all">
-                <div className="text-4xl mb-4">🏛️</div>
-                <h3 className="text-xl font-semibold text-[#00477B]">Government</h3>
-                <p className="text-sm mt-2 text-gray-700">
-                Transparency dashboards, digital registries, AI-backed public services & reporting tools.
-                </p>
-            </div>
+      {/* Government */}
+      <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all">
+        <div className="text-4xl mb-4">🏛️</div>
+        <h3 className="text-xl font-semibold text-[#00477B]">Government</h3>
+        <p className="text-sm mt-2 text-gray-700">
+          Transparency dashboards, digital registries, AI-backed public services & reporting tools.
+        </p>
+      </div>
 
-            <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all">
-                <div className="text-4xl mb-4">🛍️</div>
-                <h3 className="text-xl font-semibold text-[#00477B]">E-commerce</h3>
-                <p className="text-sm mt-2 text-gray-700">
-                Full-stack commerce solutions with smart recommendations, logistics & checkout flows.
-                </p>
-            </div>
+      {/* E-commerce */}
+      <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all">
+        <div className="text-4xl mb-4">🛍️</div>
+        <h3 className="text-xl font-semibold text-[#00477B]">E-commerce</h3>
+        <p className="text-sm mt-2 text-gray-700">
+          Full-stack commerce solutions with smart recommendations, logistics & checkout flows.
+        </p>
+      </div>
 
-            <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all">
-                <div className="text-4xl mb-4">🚀</div>
-                <h3 className="text-xl font-semibold text-[#00477B]">Startups</h3>
-                <p className="text-sm mt-2 text-gray-700">
-                MVPs, platform builds, growth tools, everything a fast-moving startup needs to scale.
-                </p>
-            </div>
-            </div>
-        </div>
-        </section>
+      {/* Startups */}
+      <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all">
+        <div className="text-4xl mb-4">🚀</div>
+        <h3 className="text-xl font-semibold text-[#00477B]">Startups</h3>
+        <p className="text-sm mt-2 text-gray-700">
+          MVPs, platform builds, growth tools — everything a fast-moving startup needs to scale.
+        </p>
+      </div>
+
+      {/* Blockchain */}
+      <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all">
+        <div className="text-4xl mb-4">⛓️</div>
+        <h3 className="text-xl font-semibold text-[#00477B]">Blockchain</h3>
+        <p className="text-sm mt-2 text-gray-700">
+          DApps, smart contracts, crypto platforms, and secure Web3 infrastructure development.
+        </p>
+      </div>
+
+      {/* Telecom */}
+      <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all">
+        <div className="text-4xl mb-4">📡</div>
+        <h3 className="text-xl font-semibold text-[#00477B]">Telecom</h3>
+        <p className="text-sm mt-2 text-gray-700">
+          Telecom automation, network optimization, billing systems, and AI-powered customer solutions.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
                     {/* Our Process Section */}
             <section className="bg-white py-20 px-6 text-gray-800">
             <div className="max-w-6xl mx-auto text-center">
