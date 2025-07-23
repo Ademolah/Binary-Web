@@ -80,8 +80,36 @@ const Home = () => {
           </div>
         </div>
       </section>
-    <section className="bg-[#F0F8FF] py-20 px-6 text-gray-800">
-  <div className="max-w-6xl mx-auto text-center">
+   
+   {/* Industry we serve */}
+
+
+<section className="relative py-20 px-6 bg-[#F0F8FF] overflow-hidden text-gray-800">
+  {/* SVG Tech Pattern Background */}
+  <svg
+    className="absolute inset-0 w-full h-full opacity-10 z-0"
+    xmlns="http://www.w3.org/2000/svg"
+    preserveAspectRatio="xMidYMid slice"
+  >
+    <defs>
+      <pattern
+        id="grid"
+        width="40"
+        height="40"
+        patternUnits="userSpaceOnUse"
+      >
+        <path
+          d="M 40 0 L 0 0 0 40"
+          fill="none"
+          stroke="#00477B"
+          strokeWidth="0.5"
+        />
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" fill="url(#grid)" />
+  </svg>
+
+  <div className="relative z-10 max-w-6xl mx-auto text-center">
     <h2 className="text-3xl md:text-4xl font-bold text-[#00477B] mb-4">
       Industries We Serve
     </h2>
@@ -90,80 +118,34 @@ const Home = () => {
     </p>
 
     <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
-      {/* Fintech */}
-      <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all">
-        <div className="text-4xl mb-4">💰</div>
-        <h3 className="text-xl font-semibold text-[#00477B]">Fintech</h3>
-        <p className="text-sm mt-2 text-gray-700">
-          Payment systems, fraud detection, AI credit scoring, and next-gen banking tools.
-        </p>
-      </div>
-
-      {/* Healthcare */}
-      <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all">
-        <div className="text-4xl mb-4">🏥</div>
-        <h3 className="text-xl font-semibold text-[#00477B]">Healthcare</h3>
-        <p className="text-sm mt-2 text-gray-700">
-          AI in diagnostics, telemedicine platforms, patient records and hospital automation.
-        </p>
-      </div>
-
-      {/* Education */}
-      <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all">
-        <div className="text-4xl mb-4">🎓</div>
-        <h3 className="text-xl font-semibold text-[#00477B]">Education</h3>
-        <p className="text-sm mt-2 text-gray-700">
-          E-learning portals, smart grading systems, student databases, and analytics dashboards.
-        </p>
-      </div>
-
-      {/* Government */}
-      <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all">
-        <div className="text-4xl mb-4">🏛️</div>
-        <h3 className="text-xl font-semibold text-[#00477B]">Government</h3>
-        <p className="text-sm mt-2 text-gray-700">
-          Transparency dashboards, digital registries, AI-backed public services & reporting tools.
-        </p>
-      </div>
-
-      {/* E-commerce */}
-      <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all">
-        <div className="text-4xl mb-4">🛍️</div>
-        <h3 className="text-xl font-semibold text-[#00477B]">E-commerce</h3>
-        <p className="text-sm mt-2 text-gray-700">
-          Full-stack commerce solutions with smart recommendations, logistics & checkout flows.
-        </p>
-      </div>
-
-      {/* Startups */}
-      <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all">
-        <div className="text-4xl mb-4">🚀</div>
-        <h3 className="text-xl font-semibold text-[#00477B]">Startups</h3>
-        <p className="text-sm mt-2 text-gray-700">
-          MVPs, platform builds, growth tools — everything a fast-moving startup needs to scale.
-        </p>
-      </div>
-
-      {/* Blockchain */}
-      <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all">
-        <div className="text-4xl mb-4">⛓️</div>
-        <h3 className="text-xl font-semibold text-[#00477B]">Blockchain</h3>
-        <p className="text-sm mt-2 text-gray-700">
-          DApps, smart contracts, crypto platforms, and secure Web3 infrastructure development.
-        </p>
-      </div>
-
-      {/* Telecom */}
-      <div className="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-all">
-        <div className="text-4xl mb-4">📡</div>
-        <h3 className="text-xl font-semibold text-[#00477B]">Telecom</h3>
-        <p className="text-sm mt-2 text-gray-700">
-          Telecom automation, network optimization, billing systems, and AI-powered customer solutions.
-        </p>
-      </div>
+      {[
+        { icon: "💰", title: "Fintech", desc: "Payment systems, fraud detection, AI credit scoring, and next-gen banking tools." },
+        { icon: "🏥", title: "Healthcare", desc: "AI in diagnostics, telemedicine platforms, patient records and hospital automation." },
+        { icon: "🎓", title: "Education", desc: "E-learning portals, smart grading systems, student databases, and analytics dashboards." },
+        { icon: "🏛️", title: "Government", desc: "Transparency dashboards, digital registries, AI-backed public services & reporting tools." },
+        { icon: "🛍️", title: "E-commerce", desc: "Full-stack commerce solutions with smart recommendations, logistics & checkout flows." },
+        { icon: "🚀", title: "Startups", desc: "MVPs, platform builds, growth tools — everything a fast-moving startup needs to scale." },
+        { icon: "⛓️", title: "Blockchain", desc: "DApps, smart contracts, crypto platforms, and secure Web3 infrastructure development." },
+        { icon: "📡", title: "Telecom", desc: "Telecom automation, network optimization, billing systems, and AI-powered customer solutions." },
+      ].map((industry, i) => (
+        <motion.div
+          key={i}
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: i * 0.1, duration: 0.6 }}
+          className="bg-white p-6 rounded-xl shadow hover:shadow-xl transition-all"
+        >
+          <div className="text-4xl mb-4">{industry.icon}</div>
+          <h3 className="text-xl font-semibold text-[#00477B]">{industry.title}</h3>
+          <p className="text-sm mt-2 text-gray-700">{industry.desc}</p>
+        </motion.div>
+      ))}
     </div>
   </div>
 </section>
+
+
 
                     {/* Our Process Section */}
             <section className="bg-white py-20 px-6 text-gray-800">
