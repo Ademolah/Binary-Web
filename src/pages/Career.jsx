@@ -16,7 +16,7 @@ const Career = () => {
           Build the Future With Us
         </h1>
         <p className="text-gray-700 text-lg md:text-xl max-w-2xl mx-auto">
-          At Binary, we're more than a tech company — we're a community of innovators, engineers, and dreamers crafting intelligent systems that shape the digital future.
+          At Binary, we're more than a tech company, we're a community of innovators, engineers, and dreamers crafting intelligent systems that shape the digital future.
         </p>
       </motion.section>
 
