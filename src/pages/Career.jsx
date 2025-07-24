@@ -89,15 +89,16 @@ const Career = () => {
               mailSubject: "Frontend Engineer Application"
             },
             {
-              title: "Backend Engineer (Node.js + MongoDB)",
+              title: "Backend Engineer (Nest Js + Prisma + Neon)",
               location: "Remote / Hybrid - Lagos, Nigeria",
               type: "Full Time",
               description: "You will design and maintain powerful backend systems, microservices, and API layers that support our real-time apps and platforms.",
               responsibilities: [
                 "Develop scalable REST and GraphQL APIs",
-                "Work with MongoDB, Redis, and PostgreSQL databases",
+                "Work with MongoDB, Redis, Neon and PostgreSQL databases",
                 "Implement security, authentication, and logging standards",
-                "Collaborate on DevOps and CI/CD practices"
+                "Collaborate on DevOps and CI/CD practices",
+                "Implement API monitoring tools like Grafana, Prometheus"
               ],
               mailSubject: "Backend Engineer Application"
             },
