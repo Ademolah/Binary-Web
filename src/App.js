@@ -34,6 +34,7 @@ import About from "./pages/About";
 import Services from "./pages/Service";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
+import Career from "./pages/Career";
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/career" element={<Career />} />
         </Routes>
       </div>
 
